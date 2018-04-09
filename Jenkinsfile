@@ -3,3 +3,6 @@
 packagePipeline {
     projectName = "acuo-common"
 }
+if (env.BRANCH_NAME == 'develop') {
+    build '../acuo-trace/develop'
+}
